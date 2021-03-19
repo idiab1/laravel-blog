@@ -16,3 +16,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/about', 'PagesController@getabout')->name('about');
+Route::get('/contact', 'PagesController@getcontact')->name('contact');
+
+
+
+
