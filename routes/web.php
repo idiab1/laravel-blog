@@ -17,8 +17,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/about', 'PagesController@getabout')->name('about');
-Route::get('/contact', 'PagesController@getcontact')->name('contact');
+Route::get('/about', 'PagesController@getAbout')->name('about');
+Route::get('/contact', 'PagesController@getContact')->name('contact');
 
 
 
