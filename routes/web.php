@@ -14,17 +14,18 @@ use Illuminate\Support\Facades\Auth;
 |
 */
 
+
 Route::get('/', function () {
-    return view('welcome');
+    return redirect()->route('login');
 });
-
-Route::get('/about', 'PagesController@getAbout')->name('about');
-Route::get('/contact', 'PagesController@getContact')->name('contact');
-
-
-
-
 
 Auth::routes();
 
+// -->>> Homepage route
 Route::get('/home', 'HomeController@index')->name('home');
+
+// -->>> about route
+Route::get('/about', 'PagesController@getAbout')->name('about');
+
+// -->>> contact route
+Route::get('/contact', 'PagesController@getContact')->name('contact');
