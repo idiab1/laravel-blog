@@ -21,9 +21,11 @@
 </head>
 <body>
     <div id="app">
-
         <!-- Include navbar-->
         @include('layouts.navbar')
+
+        <!-- Include Header -->
+        @include('layouts.header')
 
         <main class="py-4">
             <div class="container">
