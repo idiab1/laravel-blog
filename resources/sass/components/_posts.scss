@@ -1,1 +1,12 @@
 /* Post Card component */
+.post-card{
+    .post-body{
+        padding: 15px;
+        h5{
+            font-weight: 600;
+        }
+        p{
+            color: #585858;
+        }
+    }
+}
