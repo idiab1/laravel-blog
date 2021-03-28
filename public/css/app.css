@@ -5,6 +5,9 @@
   height: 350px;
   color: #e7e7e7;
   background: #213159;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Footer */
