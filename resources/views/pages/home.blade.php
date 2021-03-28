@@ -10,7 +10,6 @@
         <div class="row my-4">
             <div class="col-md-4">
                 <div class="card">
-                    <div class="card-header">{{ __('Post') }}</div>
 
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
@@ -21,7 +20,7 @@
             </div>
             <div class="col-md-4">
                 <div class="card">
-                    <div class="card-header">{{ __('Post') }}</div>
+
 
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
@@ -32,7 +31,7 @@
             </div>
             <div class="col-md-4">
                 <div class="card">
-                    <div class="card-header">{{ __('Post') }}</div>
+
 
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
@@ -45,7 +44,7 @@
         <div class="row my-4">
             <div class="col-md-4">
                 <div class="card">
-                    <div class="card-header">{{ __('Post') }}</div>
+
 
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
@@ -56,7 +55,7 @@
             </div>
             <div class="col-md-4">
                 <div class="card">
-                    <div class="card-header">{{ __('Post') }}</div>
+
 
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
@@ -67,7 +66,7 @@
             </div>
             <div class="col-md-4">
                 <div class="card">
-                    <div class="card-header">{{ __('Post') }}</div>
+
 
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
@@ -78,7 +77,7 @@
             </div>
         </div>
     </div>
-    <div class="col-md-3 my-4">
+    <div class="col-md-3 my-4 bg-dark">
         <h4 class="posts-sidebar">Heading</h4>
     </div>
 </div>
