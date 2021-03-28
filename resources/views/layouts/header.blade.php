@@ -1,7 +1,9 @@
-<header class="main-header text-center">
-    <div class="container">
-        <div class="header-content">
-            <h1 class="h1 main-heading">Welcome to eblog</h1>
+@section('header')
+    <header class="main-header text-center">
+        <div class="container">
+            <div class="header-content">
+                <h1 class="h1 main-heading">Welcome to eblog</h1>
+            </div>
         </div>
-    </div>
-</header>
+    </header>
+@show
