@@ -2,6 +2,18 @@
 
 /* Post Card component */
 
+.post-card .post-body {
+  padding: 15px;
+}
+
+.post-card .post-body h5 {
+  font-weight: 600;
+}
+
+.post-card .post-body p {
+  color: #585858;
+}
+
 .main-header {
   width: 100%;
   height: 350px;
@@ -15,6 +27,24 @@
 /* Global roles */
 
 /* End of Global roles */
+
+.sidebar {
+  background-color: #f04b4c;
+}
+
+.sidebar .search-form form input {
+  width: 70%;
+  text-indent: 10px;
+  padding: 0;
+  text-transform: capitalize;
+  font-size: 15px;
+  display: inline-block;
+}
+
+.sidebar .search-form form button {
+  background: #000;
+  color: #fff;
+}
 
 /* Footer */
 

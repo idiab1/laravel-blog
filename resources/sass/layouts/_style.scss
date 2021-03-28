@@ -5,3 +5,23 @@
 
 
 /* End of Global roles */
+
+.sidebar{
+    background-color: $custom-red;
+    .search-form{
+        form {
+            input{
+                width: 70%;
+                text-indent: 10px;
+                padding: 0;
+                text-transform: capitalize;
+                font-size: 15px;
+                display: inline-block;
+            }
+            button{
+                background: #000;
+                color: #fff;
+            }
+        }
+    }
+}
