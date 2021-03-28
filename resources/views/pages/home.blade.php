@@ -83,7 +83,7 @@
             <form action="" method="">
                 <div class="form-group">
                     <input type="text" class="form-control" placeholder="Find your post">
-                    <button type="submit" class="">Find</button>
+                    <button type="submit" class="btn">Find</button>
                 </div>
             </form>
         </div>
