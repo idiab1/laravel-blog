@@ -28,7 +28,7 @@
         <!-- Include Header -->
         @include('layouts.header')
 
-        <main class="py-4">
+        <main class="py-5">
             <div class="container">
                 @yield('content')
             </div>
