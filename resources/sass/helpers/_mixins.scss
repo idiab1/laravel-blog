@@ -1,0 +1,11 @@
+/* Mixins prefixer */
+// - + prefix + - + property: value
+@mixin prefixer($property, $value, $prefixers:()) {
+    @each $prefix in $prefixers {
+        #{'-' + $prefix + '-' + $property}: $value;
+    }
+    // implimantation main on property
+    #{$property}: $value;
+}
+
+/* End of mixinx for prefixer */
