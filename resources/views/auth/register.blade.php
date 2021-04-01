@@ -1,7 +1,9 @@
 @extends('layouts.app')
 
+{{-- Title --}}
 @section('title') {{__('Register')}} @endsection
 
+{{-- Style --}}
 @section('styles')
     <style>
         body{
@@ -10,10 +12,12 @@
     </style>
 @endsection
 
+{{-- Header --}}
 @section('header')
 
 @endsection
 
+{{-- Content --}}
 @section('content')
 
 <div class="sign-form">
@@ -284,3 +288,5 @@
     </div> --}}
 {{-- </div>  --}}
 @endsection
+
+{{-- End content --}}
