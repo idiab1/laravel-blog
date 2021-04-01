@@ -80,7 +80,7 @@
 
                                 <!-- form button -->
                                 <div class="form-group mb-0">
-                                    <div class="col-md-10">
+                                    <div class="col-md-12">
                                         <button type="submit" class="btn btn-primary sign-btn">
                                             {{ __('Login') }}
                                         </button>
