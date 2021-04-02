@@ -1,0 +1,64 @@
+/* Login and register pages */
+.sign-form{
+    .sign-info{
+        h2{
+            margin: 0;
+            color: #fff;
+            font-size: 28px;
+            font-weight: 600;
+            text-transform: capitalize;
+            line-height: 1.5;
+        }
+    }
+
+    .sign-form-container{
+        margin: 30px 0;
+        background: #fff;
+        .sign-form-box{
+            background-color: #fff;
+            padding: 30px 50px;
+            border-right: 1px solid #000;
+            position: relative;
+            &::after{
+                content: "OR";
+                position: absolute;
+                top: 45%;
+                right: -25px;
+                width: 50px;
+                height: 50px;
+                line-height: 50px;
+                text-align: center;
+                font-weight: 600;
+                z-index: 5;
+                background: #e7e7e7;
+                @include prefixer(border-radius, 50%, webkit moz ms o);
+            }
+            form{
+                label{
+
+                }
+                input{
+                    @include prefixer(border-radius, 0, webkit moz ms o);
+                }
+            }
+        }
+        .sing-social-container{
+            background: $light-blue;
+            .sign-social-media{
+                transform: translate(0px, 120px);
+            }
+        }
+    }
+    .sign-footer{
+        color: #fff;
+        p{
+            a{
+                color: #beffa8;
+            }
+        }
+    }
+}
+
+
+
+/* End of style login and register pages */
