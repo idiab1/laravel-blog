@@ -1,6 +1,9 @@
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Nunito');
 
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
 // -->>> Helpers
 // Variables
 @import 'helpers/variables';
@@ -13,8 +16,6 @@
 
 
 // -->>> Components
-// Buttons
-@import "components/buttons";
 
 // Post Card
 @import "components/posts";
@@ -37,10 +38,13 @@
 // Contact page
 @import "pages/contact";
 
+// -->>> Components
+// Buttons
+@import "components/buttons";
+
 // Footer
 @import "layouts/footer";
 
 
 
-// Bootstrap
-@import '~bootstrap/scss/bootstrap';
+
