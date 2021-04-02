@@ -10948,16 +10948,52 @@ a.text-dark:focus {
 
 /* Post Card component */
 
+.post-card {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 .post-card .post-body {
-  padding: 15px;
+  padding: 20px 15px;
 }
 
-.post-card .post-body h5 {
+.post-card .post-body .post-title {
+  display: inline-block;
   font-weight: 600;
+  margin: 0;
+  text-transform: capitalize;
 }
 
-.post-card .post-body p {
+.post-card .post-body .post-date {
   color: #585858;
+  font-size: 17px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.post-card .post-body .post-description {
+  color: #585858;
+  margin: 0;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  line-height: 1.5;
+  font-size: 17px;
+}
+
+.post-card .post-body .btn-read-post {
+  padding: 0;
+  color: #000;
+  font-weight: 600;
+  font-size: 17px;
+}
+
+.post-card .post-footer {
+  padding: 20px 15px;
+  background-color: #fff;
+}
+
+.post-card .post-footer ul {
+  margin: 0;
 }
 
 .main-header {
@@ -11051,6 +11087,16 @@ a.text-dark:focus {
 }
 
 /* End of style login and register pages */
+
+/* Main section */
+
+.main-section .main-section-info h2 {
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #000;
+}
+
+/* End of Main section */
 
 /* Sing button exist in login and register */
 

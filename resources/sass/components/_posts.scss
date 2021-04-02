@@ -1,12 +1,45 @@
 /* Post Card component */
 .post-card{
+    margin-top: 20px;
+    margin-bottom: 20px;
     .post-body{
-        padding: 15px;
-        h5{
+        padding: 20px 15px;
+        .post-title{
+            display: inline-block;
             font-weight: 600;
+            margin: 0;
+            text-transform: capitalize;
         }
-        p{
+        .post-date{
             color: #585858;
+            font-size: 17px;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+        .post-description{
+            color: #585858;
+            margin: 0;
+            padding-top: 5px;
+            padding-bottom: 10px;
+            line-height: 1.5;
+            font-size: 17px;
+        }
+        .btn-read-post{
+            padding: 0;
+            color: #000;
+            font-weight: 600;
+            font-size: 17px;
+
+        }
+    }
+    .post-footer{
+        padding: 20px 15px;
+        background-color: #fff;
+        ul{
+            margin: 0;
+            li{
+
+            }
         }
     }
 }
