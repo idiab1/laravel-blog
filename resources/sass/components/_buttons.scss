@@ -1,0 +1,27 @@
+/* Sing button exist in login and register */
+.sign-btn{
+    width: 100%;
+    display: block;
+    background: $custom-red;
+    color: $main-background-color;
+    border-color: $custom-red;
+    font-weight: 600;
+    text-transform: uppercase;
+    @include prefixer(border-radius, 0, webkit moz ms o);
+    // @include prefixer(transition, .25s , webkit moz ms o);
+    &:hover{
+        background: $custom-red;
+        border-color: $custom-red;
+
+    }
+}
+
+/* End of style sing button exist in login and register */
+
+.sign-form{
+    .btn-link{
+        padding-left: 0;
+        color: $main-background-color;
+
+    }
+}
