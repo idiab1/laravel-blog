@@ -10974,11 +10974,11 @@ a.text-dark:focus {
 
 /* End of Global roles */
 
-.sidebar {
+.sidebar-posts {
   background-color: #f04b4c;
 }
 
-.sidebar .search-form form input {
+.sidebar-posts .search-form form input {
   width: 70%;
   text-indent: 10px;
   padding: 0;
@@ -10987,7 +10987,7 @@ a.text-dark:focus {
   display: inline-block;
 }
 
-.sidebar .search-form form button {
+.sidebar-posts .search-form form button {
   background: #000;
   color: #fff;
 }
