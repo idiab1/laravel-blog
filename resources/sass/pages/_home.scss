@@ -1,0 +1,32 @@
+/* Main section */
+.main-section{
+    // style main sectio info for heading section
+    .main-section-info{
+        h2{
+            font-weight: 600;
+            text-transform: capitalize;
+            color: #000;
+
+        }
+    }
+    // Style post card
+    .post-card{
+        .post-body{
+            .post-title{}
+            .post-date{}
+            .post-description{}
+            .btn-read-post{}
+        }
+        .post-footer{
+            ul{
+                li{
+
+                }
+            }
+        }
+    }
+}
+
+
+
+/* End of Main section */
