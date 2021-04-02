@@ -76,10 +76,10 @@
                     <div class="card post-card">
 
                         <div class="card-body post-body">
-                            <h5 class="card-title">Card title</h5>
+                            <h5 class="card-title post-title">Card title</h5>
                             <span class="post-date">02/4/2021</span>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="">Read More</a>
+                            <p class="card-text post-description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-link btn-read-post">Read More</a>
                         </div>
                         <div class="card-footer post-footer">
                             <ul class="list-unstyled">
@@ -92,10 +92,10 @@
                     <div class="card post-card">
 
                         <div class="card-body post-body">
-                            <h5 class="card-title">Card title</h5>
+                            <h5 class="card-title post-title">Card title</h5>
                             <span class="post-date">02/4/2021</span>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="">Read More</a>
+                            <p class="card-text post-description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-link btn-read-post">Read More</a>
                         </div>
                         <div class="card-footer post-footer">
                             <ul class="list-unstyled">
@@ -108,10 +108,10 @@
                     <div class="card post-card">
 
                         <div class="card-body post-body">
-                            <h5 class="card-title">Card title</h5>
+                            <h5 class="card-title post-title">Card title</h5>
                             <span class="post-date">02/4/2021</span>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="">Read More</a>
+                            <p class="card-text post-description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-link btn-read-post">Read More</a>
                         </div>
                         <div class="card-footer post-footer">
                             <ul class="list-unstyled">
@@ -126,10 +126,10 @@
                     <div class="card post-card">
 
                         <div class="card-body post-body">
-                            <h5 class="card-title">Card title</h5>
+                            <h5 class="card-title post-title">Card title</h5>
                             <span class="post-date">02/4/2021</span>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="">Read More</a>
+                            <p class="card-text post-description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-link btn-read-post">Read More</a>
                         </div>
                         <div class="card-footer post-footer">
                             <ul class="list-unstyled">
@@ -142,10 +142,10 @@
                     <div class="card post-card">
 
                         <div class="card-body post-body">
-                            <h5 class="card-title">Card title</h5>
+                            <h5 class="card-title post-title">Card title</h5>
                             <span class="post-date">02/4/2021</span>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="">Read More</a>
+                            <p class="card-text post-description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-link btn-read-post">Read More</a>
                         </div>
                         <div class="card-footer post-footer">
                             <ul class="list-unstyled">
@@ -158,10 +158,10 @@
                     <div class="card post-card">
 
                         <div class="card-body post-body">
-                            <h5 class="card-title">Card title</h5>
+                            <h5 class="card-title post-title">Card title</h5>
                             <span class="post-date">02/4/2021</span>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="">Read More</a>
+                            <p class="card-text post-description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-link btn-read-post">Read More</a>
                         </div>
                         <div class="card-footer post-footer">
                             <ul class="list-unstyled">
