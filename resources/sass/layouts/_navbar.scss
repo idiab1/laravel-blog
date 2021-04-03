@@ -1,0 +1,28 @@
+/* Navbar */
+.navbar{
+    .navbar-brand{
+        font-style: italic;
+        font-weight: 600;
+        color: #000;
+    
+    }
+    .navbar-nav{
+        .nav-item{
+            .nav-link{
+                color: rgb(0 0 0 / 66%);
+            }
+        }
+        .dropdown{
+            .dropdown-menu{
+                &.show{
+                    margin-top: 6px;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+/* End of Navbar */
