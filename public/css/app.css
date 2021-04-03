@@ -10996,6 +10996,24 @@ a.text-dark:focus {
   margin: 0;
 }
 
+/* Navbar */
+
+.navbar .navbar-brand {
+  font-style: italic;
+  font-weight: 600;
+  color: #000;
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+  color: rgba(0, 0, 0, 0.66);
+}
+
+.navbar .navbar-nav .dropdown .dropdown-menu.show {
+  margin-top: 6px;
+}
+
+/* End of Navbar */
+
 .main-header {
   width: 100%;
   height: 350px;
@@ -11122,6 +11140,23 @@ a.text-dark:focus {
   padding-left: 0;
   color: #213159;
 }
+
+/* Style for button create posts */
+
+.btn-new-post {
+  background: #3d6098;
+  margin: 2px 5px;
+  color: #e7e7e7;
+  text-transform: capitalize;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.btn-new-post:hover {
+  color: #e7e7e7;
+}
+
+/* End of style for button create posts */
 
 /* Footer */
 

@@ -25,3 +25,20 @@
 
     }
 }
+
+/* Style for button create posts */
+.btn-new-post{
+    background: $light-blue;
+    margin: 2px 5px;
+    color: $gray;
+    text-transform: capitalize;
+    font-size: 16px;
+    letter-spacing: 1px;
+
+    &:hover{
+        color: $gray;
+    }
+}
+
+
+/* End of style for button create posts */
