@@ -29,3 +29,14 @@ Route::get('/about', 'PagesController@getAbout')->name('about');
 
 // -->>> contact route
 Route::get('/contact', 'PagesController@getContact')->name('contact');
+
+// -->> Profile route
+// Route::get('/profile', "ProfileController@index")->name('profile');
+
+Route::resource('profile', 'ProfileController')->only([
+    'index', 'update'
+])->names([
+    'index' => 'profile.index',
+    'update' => 'profile.update'
+]);
+
