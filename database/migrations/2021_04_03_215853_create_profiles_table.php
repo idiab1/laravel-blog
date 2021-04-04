@@ -14,7 +14,7 @@ class CreateProfilesTable extends Migration
     public function up()
     {
         Schema::create('profiles', function (Blueprint $table) {
-            $table->id();
+            $table->increments('id');
             $table->integer('user_id')->unsigned();
             $table->string('gender')->nullable();
             $table->string('address')->nullable();
@@ -24,7 +24,10 @@ class CreateProfilesTable extends Migration
             $table->timestamps();
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
         });
+
+        
     }
+    
 
     /**
      * Reverse the migrations.
