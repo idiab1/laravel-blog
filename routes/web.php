@@ -42,3 +42,19 @@ Route::resource('profile', 'ProfileController')->only([
     'update' => 'profile.update'
 ]);
 // Route::get('profile/setting', 'ProfileController@setting')->name('profile.setting');
+
+// -->> Post Route
+Route::resource('posts', 'PostController')->parameters([
+    'posts' => 'post'
+])->names([
+    'index' => 'posts.index',
+    'create' => 'post.create',
+    'store' => 'post.store',
+    'show' => 'post.show',
+    'edit' => 'post.index',
+    'update' => 'post.update',
+    'destroy' => 'post.destroy'
+]);
+Route::get('posts/trashed', 'PostController@postsTrashed')->name('posts.trashed');
+Route::get('posts/hdelete/{id}', 'PostController@hdelete')->name('post.hdelete');
+Route::get('posts/restore/{id}', 'PostController@restore')->name('posts.restore');
