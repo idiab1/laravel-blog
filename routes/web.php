@@ -34,9 +34,11 @@ Route::get('/contact', 'PagesController@getContact')->name('contact');
 // Route::get('/profile', "ProfileController@index")->name('profile');
 
 Route::resource('profile', 'ProfileController')->only([
-    'index', 'update'
+    'index','update'
+])->parameters([
+    'profile' => 'profile'
 ])->names([
     'index' => 'profile.index',
     'update' => 'profile.update'
 ]);
-
+// Route::get('profile/setting', 'ProfileController@setting')->name('profile.setting');
