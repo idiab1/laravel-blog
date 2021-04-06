@@ -8,9 +8,9 @@
 <div class="main-section">
     <div class="row">
         <div class="col-12">
-        <div class="main-section-info">
-            <h2 class="heading">Post Popular</h2>
-        </div>
+            <div class="main-section-info">
+                <h2 class="heading">Post Popular</h2>
+            </div>
 
         </div>
     </div>
