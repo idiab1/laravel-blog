@@ -61,3 +61,17 @@ Route::get('/posts_trashed', 'PostController@postsTrashed')->name('posts.trashed
 Route::get('/posts/hdelete/{id}', 'PostController@hdelete')->name('post.hdelete');
 // -->> Restore posts route
 Route::get('/posts/restore/{id}', 'PostController@restore')->name('post.restore');
+
+//  -->>> Tags route
+Route::resource('posts', 'PostController')->only([
+    'index', 'create', 'store', 'edit', 'update', 'destroy'
+])->parameters([
+    'tags' => 'tag'
+])->names([
+    'index' => 'tags.index',
+    'create' => 'tag.create',
+    'store' => 'tag.store',
+    'edit' => 'tag.edit',
+    'update' => 'tag.update',
+    'destroy' => 'tag.destroy'
+]);
