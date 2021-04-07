@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Post;
+use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Str;
@@ -23,6 +24,7 @@ class PostController extends Controller
         $posts = Post::all();
         return view('posts.index', compact('posts'));
     }
+
 
     /**
      * Show the form for creating a new resource.
@@ -72,8 +74,8 @@ class PostController extends Controller
     public function show($slug)
     {
 
-        $posts = Post::where('slug', $slug)->first();
-        return view('posts.show', compact('posts'));
+        $post = Post::where('slug', $slug)->first();
+        return view('posts.show', compact('post'));
 
     }
 
@@ -85,9 +87,9 @@ class PostController extends Controller
      */
     public function edit($id)
     {
-        $posts = Post::find($id);
+        $post = Post::where('id', $id)->where('user_id', Auth::user()->id)->first();
 
-        return view('posts.edit', compact('posts'));
+        return view('posts.edit', compact('post'));
 
     }
 
@@ -105,7 +107,7 @@ class PostController extends Controller
         $this->validate($request, [
             'title' => 'required',
             'content' => 'required',
-            'photo' => 'required|image',
+            // 'photo' => 'required|image',
         ]);
 
         if($request->has('photo')){
@@ -128,9 +130,14 @@ class PostController extends Controller
      */
     public function destroy($id)
     {
-        $post = Post::find($id);
+        $post = Post::where('id', $id)->where('user_id', Auth::user()->id)->first();
         $post->delete();
         return redirect()->back();
+    }
+    
+    public function postsTrashed(){
+        $posts = Post::onlyTrashed()->where('user_id', Auth::user()->id)->get();
+        return view('posts.trashed', compact('posts'));
     }
 
     public function hdelete($id){
