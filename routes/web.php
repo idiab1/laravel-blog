@@ -41,7 +41,7 @@ Route::resource('profile', 'ProfileController')->only([
     'index' => 'profile.index',
     'update' => 'profile.update'
 ]);
-// Route::get('profile/setting', 'ProfileController@setting')->name('profile.setting');
+Route::get('profile/setting', 'ProfileController@setting')->name('profile.setting');
 
 // -->> Post Route
 Route::resource('posts', 'PostController')->parameters([
@@ -51,10 +51,13 @@ Route::resource('posts', 'PostController')->parameters([
     'create' => 'post.create',
     'store' => 'post.store',
     'show' => 'post.show',
-    'edit' => 'post.index',
+    'edit' => 'post.edit',
     'update' => 'post.update',
     'destroy' => 'post.destroy'
 ]);
-Route::get('posts/trashed', 'PostController@postsTrashed')->name('posts.trashed');
-Route::get('posts/hdelete/{id}', 'PostController@hdelete')->name('post.hdelete');
-Route::get('posts/restore/{id}', 'PostController@restore')->name('posts.restore');
+// Route::get('/post/show/{slug}', 'PostController@show' )->name('post.show');
+Route::get('/posts_trashed', 'PostController@postsTrashed')->name('posts.trashed');
+// -->> Hard delete route
+Route::get('/posts/hdelete/{id}', 'PostController@hdelete')->name('post.hdelete');
+// -->> Restore posts route
+Route::get('/posts/restore/{id}', 'PostController@restore')->name('post.restore');
