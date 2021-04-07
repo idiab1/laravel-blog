@@ -3,6 +3,7 @@
         <div class="container">
             <div class="header-content">
                 <h1 class="h1 main-heading">@yield('header_content', 'Welcome to eBlog')</h1>
+                @yield('breadcrumb')
             </div>
         </div>
     </header>
