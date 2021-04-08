@@ -53,6 +53,16 @@
                         <label for="photo">Photo</label>
                         <input type="file" class="form-control" id="photo" name="photo">
                     </div>
+                    <!-- Tags -->
+                    <div class="form-group">
+                        @foreach ($tags as $tag)
+                            <input type="checkbox"  id="tag" name="tags[]" value="{{$tag->id}}">
+                            <label for="tag">{{$tag->tag}}</label> 
+                            
+
+                        @endforeach
+                    </div>
+                    
                     <div class="form-group">
                         <button class="btn btn-success" type="submit">Save</button>
                     </div>

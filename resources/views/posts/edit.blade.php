@@ -54,6 +54,22 @@
                         <label for="photo">Photo</label>
                         <input type="file" class="form-control" id="photo" name="photo">
                     </div>
+                    <!-- Tags -->
+                    <div class="form-group">
+                        @foreach ($tags as $tag)
+                            <input type="checkbox"  id="tag" name="tag[]" 
+                            value="{{$tag->id}}"
+                             @foreach ($post->tag as $item2)
+                                @if ($tag->id == $item2->id)
+                                    checked
+                                @endif
+                            @endforeach
+                            >
+                            <label for="tag">{{$tag->tag}}</label> 
+                            
+
+                        @endforeach
+                    </div>
                     <div class="form-group">
                         <button class="btn btn-success" type="submit">Update</button>
                     </div>
