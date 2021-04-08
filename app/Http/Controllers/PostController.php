@@ -55,7 +55,8 @@ class PostController extends Controller
             'photo' => 'required|image',
             'tags' => 'required',
         ]);
-
+            
+            // dd($request);
         $photo = $request->photo;
         $newPhoto = time().$photo->getClientOriginalName();
         $photo->move('uploads/posts',$newPhoto);
@@ -67,7 +68,7 @@ class PostController extends Controller
             'photo' => 'uploads/posts/'.$newPhoto,
             'slug' => Str::slug($request->title),
         ]);
-        $post->tag()->attach($request->tag);
+        $post->tags()->attach($request->tags);
 
         return redirect()->back();
 
@@ -129,7 +130,7 @@ class PostController extends Controller
         $post->title = $request->title;
         $post->content = $request->content;
         $post->save();
-        $post->tag()->sync($request->tags);
+        $post->tags()->sync($request->tag);
 
         return redirect()->back();
     }
