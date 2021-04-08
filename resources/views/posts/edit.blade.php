@@ -59,7 +59,7 @@
                         @foreach ($tags as $tag)
                             <input type="checkbox"  id="tag" name="tag[]" 
                             value="{{$tag->id}}"
-                             @foreach ($post->tag as $item2)
+                             @foreach ($post->tags as $item2)
                                 @if ($tag->id == $item2->id)
                                     checked
                                 @endif
@@ -69,6 +69,22 @@
                             
 
                         @endforeach
+
+                         {{-- @foreach ($tags as $item)
+                            <input type="checkbox" name="tags[]"
+                            value="{{$item->id}}"
+
+                            @foreach ($post->tag as $item2)
+                                @if ($item->id == $item2->id)
+                                    checked
+                                @endif
+                            @endforeach
+
+                            > 
+
+                        @endforeach--}}
+
+
                     </div>
                     <div class="form-group">
                         <button class="btn btn-success" type="submit">Update</button>
