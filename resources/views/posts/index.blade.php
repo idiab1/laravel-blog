@@ -39,9 +39,12 @@
                             </tr>
                         </thead>
                         <tbody>
+                            @php
+                                $id = 1;
+                            @endphp
                             @foreach ($posts as $post)
                                 <tr>
-                                    <th scope="row">{{$post->id}}</th>
+                                    <th scope="row">{{$id++}}</th>
                                     <td>{{$post->title}}</td>
                                     <td>{{$post->created_at->diffForhumans()}}</td>
                                     <td>{{$post->user->name}}</td>
