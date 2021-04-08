@@ -58,12 +58,12 @@ Route::resource('posts', 'PostController')->parameters([
 // Route::get('/post/show/{slug}', 'PostController@show' )->name('post.show');
 Route::get('/posts_trashed', 'PostController@postsTrashed')->name('posts.trashed');
 // -->> Hard delete route
-Route::get('/posts/hdelete/{id}', 'PostController@hdelete')->name('post.hdelete');
+Route::delete('/posts/hdelete/{id}', 'PostController@hdelete')->name('post.hdelete');
 // -->> Restore posts route
 Route::get('/posts/restore/{id}', 'PostController@restore')->name('post.restore');
 
 //  -->>> Tags route
-Route::resource('posts', 'PostController')->only([
+Route::resource('tags', 'TagController')->only([
     'index', 'create', 'store', 'edit', 'update', 'destroy'
 ])->parameters([
     'tags' => 'tag'
