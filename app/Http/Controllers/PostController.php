@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Post;
 use App\User;
+use App\Tag;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Str;
@@ -33,7 +34,11 @@ class PostController extends Controller
      */
     public function create()
     {
-        return view('posts.create');
+        $tags = Tag::all();
+        if ($tags->count() == 0) {
+            return   redirect()->route('tag.create');
+        }
+        return view('posts.create', compact('tags'));
     }
 
     /**
@@ -48,6 +53,7 @@ class PostController extends Controller
             'title' => 'required',
             'content' => 'required',
             'photo' => 'required|image',
+            'tags' => 'required',
         ]);
 
         $photo = $request->photo;
@@ -61,6 +67,8 @@ class PostController extends Controller
             'photo' => 'uploads/posts/'.$newPhoto,
             'slug' => Str::slug($request->title),
         ]);
+        $post->tag()->attach($request->tag);
+
         return redirect()->back();
 
     }
@@ -73,9 +81,10 @@ class PostController extends Controller
      */
     public function show($slug)
     {
+        $tags = Tag::all();
 
         $post = Post::where('slug', $slug)->first();
-        return view('posts.show', compact('post'));
+        return view('posts.show', compact('post', 'tags'));
 
     }
 
@@ -87,9 +96,11 @@ class PostController extends Controller
      */
     public function edit($id)
     {
+        $tags = Tag::all();
+
         $post = Post::where('id', $id)->where('user_id', Auth::user()->id)->first();
 
-        return view('posts.edit', compact('post'));
+        return view('posts.edit', compact('post', 'tags'));
 
     }
 
@@ -107,7 +118,6 @@ class PostController extends Controller
         $this->validate($request, [
             'title' => 'required',
             'content' => 'required',
-            // 'photo' => 'required|image',
         ]);
 
         if($request->has('photo')){
@@ -119,6 +129,8 @@ class PostController extends Controller
         $post->title = $request->title;
         $post->content = $request->content;
         $post->save();
+        $post->tag()->sync($request->tags);
+
         return redirect()->back();
     }
 
