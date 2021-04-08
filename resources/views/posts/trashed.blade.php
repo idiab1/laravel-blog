@@ -56,7 +56,7 @@
                                         <a class="text-success" href="{{route('post.restore', ['id' => $post->id])}}"> <i class="fas fa-undo"></i></a>
                                         <form action="{{route('post.hdelete', ['id' => $post->id])}}" method="POST">
                                             @csrf
-                                            @method('DELETE')
+                                            @method("DELETE")
                                             <button class="btn text-danger" type="submit"><i class="fas fa-trash"></i></button>
                                         </form>
                                     </td>
@@ -177,17 +177,7 @@
             </div>
         </div> --}}
 
-        {{-- <div class="col-md-3 sidebar-posts">
-            <h4 class="posts-sidebar">Heading</h4>
-            <div class="search-form">
-                <form action="" method="">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Find your post">
-                        <button type="submit" class="btn">Find</button>
-                    </div>
-                </form>
-            </div>
-        </div> --}}
+        
     </div>
 </div> 
 @endsection
