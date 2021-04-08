@@ -14,7 +14,8 @@ class TagController extends Controller
      */
     public function index()
     {
-        //
+        $tags = Tag::all();
+        return view('tags.index', compact('tags')); 
     }
 
     /**
@@ -24,7 +25,7 @@ class TagController extends Controller
      */
     public function create()
     {
-        //
+        return view('tags.create');
     }
 
     /**
@@ -35,29 +36,27 @@ class TagController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validate($request, [
+            "tag" => 'required'
+        ]);
+        $tag = Tag::create([
+            'tag' => $request->tag
+        ]);
+        return redirect()->back();
+
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Tag  $tag
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Tag $tag)
-    {
-        //
-    }
-
+    
     /**
      * Show the form for editing the specified resource.
      *
      * @param  \App\Tag  $tag
      * @return \Illuminate\Http\Response
      */
-    public function edit(Tag $tag)
+    public function edit($id)
     {
-        //
+        $tag = Tag::find($id);
+        return view('tags.edit', compact('tag'));
     }
 
     /**
@@ -67,9 +66,16 @@ class TagController extends Controller
      * @param  \App\Tag  $tag
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Tag $tag)
+    public function update(Request $request, $id)
     {
-        //
+        $tag = Tag::find($id);
+        $this->validate($request, [
+            "tag" => 'required'
+        ]);
+        $tag->tag = $request->tag;
+        $tag->save();
+        return redirect()->back();
+
     }
 
     /**
@@ -78,8 +84,10 @@ class TagController extends Controller
      * @param  \App\Tag  $tag
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Tag $tag)
+    public function destroy($id)
     {
-        //
+        $tag = Tag::find($id);
+        $tag->destroy($id);
+        return redirect()->back();
     }
 }
