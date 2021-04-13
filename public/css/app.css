@@ -11026,6 +11026,10 @@ a.text-dark:focus {
 
 /* Global roles */
 
+body {
+  background-color: #f8fafc;
+}
+
 /* End of Global roles */
 
 .sidebar-posts {
