@@ -16,6 +16,9 @@
                         <a class="nav-link" href="{{ route('about') }}">{{ __('About') }}</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="{{ route('posts.index') }}">{{ __('Posts') }}</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="{{ route('contact') }}">{{ __('Contact') }}</a>
                     </li>
                 </ul>
