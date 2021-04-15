@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Post;
 
 class HomeController extends Controller
 {
@@ -23,6 +24,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('pages.home');
+        $posts = Post::inRandomOrder()->limit(12)->get();
+        return view('pages.home', compact('posts'));
     }
 }
